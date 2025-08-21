@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" /> <!-- TODO: change to momentum icon -->
+    <link rel="stylesheet" href="@momentum-design/fonts/dist/css/fonts.css" />
+    <link rel="stylesheet" href="@momentum-design/tokens/dist/css/components/complete.css" />
+    <script src="@momentum-design/components/browser/index.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Momentum Web App</title>
+  </head>
+  <body class="mds-typography">
+    <mdc-theme-provider themeClass="mds-theme-stable-darkWebex">
+      <mdc-icon-provider>
+        <div id="root">
+          <!-- Views update here -->
+        </div>
+      </mdc-icon-provider>
+    </mdc-theme-provider>
+    
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
