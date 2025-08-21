@@ -1,14 +1,21 @@
 import './App.css'
-import MainLayout from './layouts/MainLayout';
-import HomePage from './pages/HomePage';
+import MainLayout from './layouts/MainLayout'
+import HomePage from './pages/HomePage'
+
+import { ThemeProvider, IconProvider } from '@momentum-design/components/react'
 
 function App() {
   return (
     <>
       <div>
-        <MainLayout>
-          <HomePage />
-        </MainLayout>
+        <ThemeProvider themeclass="mds-theme-stable-darkWebex">
+          <IconProvider>
+            <MainLayout>
+              {/* TODO: Add switcher for pages here */}
+              <HomePage />
+            </MainLayout>
+          </IconProvider>
+        </ThemeProvider>
       </div>
     </>
   )

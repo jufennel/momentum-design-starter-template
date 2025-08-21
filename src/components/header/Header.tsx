@@ -1,6 +1,6 @@
-import React from 'react';
-import { Avatar, Appheader, Button, Brandvisual, Chip } from '@momentum-design/components/react';
-import styles from './Header.module.css';
+import React from 'react'
+import { Avatar, Appheader, Button, Brandvisual, Chip } from '@momentum-design/components/react'
+import styles from './Header.module.css'
 
 const Header: React.FC = () => {
   return (

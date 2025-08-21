@@ -1,5 +1,5 @@
-import React from 'react';
-import { SideNavigation, MenuSection, MenuItem } from '@momentum-design/components/react';
+import React from 'react'
+import { SideNavigation, MenuSection, MenuItem } from '@momentum-design/components/react'
 import styles from './SideNav.module.css'
 
 const SideNav: React.FC = () => {

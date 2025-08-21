@@ -10,9 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@momentum-design/brand-visuals": "^0.16.0",
     "@momentum-design/components": "^0.104.12",
     "@momentum-design/fonts": "^0.2.3",
     "@momentum-design/icons": "^0.34.0",
+    "@momentum-design/illustrations": "^0.2.4",
     "@momentum-design/tokens": "^0.7.0",
     "@tailwindcss/vite": "^4.1.12",
     "react": "^19.1.1",
