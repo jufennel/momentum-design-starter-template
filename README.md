@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -67,3 +68,7 @@ export default tseslint.config([
   },
 ])
 ```
+=======
+# momentum-design-starter-template
+A starter template for Momentum Web Apps
+>>>>>>> d5c808d90e8619bfd4fa39cf9fef6fc9c119d6ba
