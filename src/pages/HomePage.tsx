@@ -7,7 +7,7 @@ const HomePage: React.FC = () => {
         <div>
             <h1>Welcome Test</h1>
 
-            <div className="grid grid-cols-1 gap-4">
+            <div className="">
                 <Avatar src="https://picsum.photos/id/63/256" />
                 <Input className="input-test" label="Label" help-text-type="default" help-text="Helper text" validation-message=""
                     placeholder="Placeholder" toggletip-placement="" toggletip-text="" info-icon-aria-label=""

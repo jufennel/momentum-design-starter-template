@@ -1,16 +1,55 @@
 import React from 'react'
-import { SideNavigation, MenuSection, MenuItem } from '@momentum-design/components/react'
-import styles from './SideNav.module.css'
+import { SideNavigation, MenuSection, NavMenuItem, Icon } from '@momentum-design/components/react'
+import './sidenav.css';
 
-const SideNav: React.FC = () => {
+interface SideNavProps {
+  isSideNavCollapsed: boolean;
+  setIsSideNavCollapsed: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+// there is currently a bug where the SideNavigation component doesn't have a callback which listens for the toggle event
+// of the divider button. Once fixed, we want to connect the setIsSideNavCollapsed prop to the toggle event
+// so that the state of the sidenav can be controlled from the parent component.
+const SideNav: React.FC<SideNavProps>= ({isSideNavCollapsed}: SideNavProps) => {
     return (
         <>
-            <SideNavigation variant="flexible" footer-text="Customer Name" grabber-btn-aria-label="Toggle Side navigation" parent-nav-tooltip-text="Contains active navmenuitem">
-                <MenuSection slot="scrollable-menubar" show-divider="">
-                    <MenuItem badge-type="counter" counter="2" max-counter="66" icon-name="chat-bold" nav-id="1" label="Messaging"></MenuItem>
-                    <MenuItem icon-name="meetings-bold" nav-id="2" label="Meetings" disabled=""></MenuItem>
-                    <MenuItem badge-type="dot" icon-name="audio-call-bold" nav-id="3" label="Calling"></MenuItem>
+            <SideNavigation expanded={isSideNavCollapsed} variant="flexible" footerText="Customer Name" grabberBtnAriaLabel="Toggle Side navigation" parentNavTooltipText="Contains active navmenuitem" className="sidenav">
+                <MenuSection slot="scrollable-menubar" showDivider>
+                    <NavMenuItem iconName="placeholder-regular" navId="1" label="Label"></NavMenuItem>
+                    <NavMenuItem iconName="placeholder-regular" navId="2" label="Label"></NavMenuItem>
+                    <NavMenuItem iconName="placeholder-regular" navId="3" label="Label"></NavMenuItem>
+                    <NavMenuItem iconName="placeholder-regular" navId="4" label="Label"></NavMenuItem>
+                    <NavMenuItem iconName="placeholder-regular" navId="5" label="Label"></NavMenuItem>
                 </MenuSection>
+                <MenuSection slot="scrollable-menubar" showDivider>
+                    <NavMenuItem iconName="placeholder-regular" navId="6" label="Label"></NavMenuItem>
+                    <NavMenuItem iconName="placeholder-regular" navId="7" label="Label"></NavMenuItem>
+                    <NavMenuItem iconName="placeholder-regular" navId="8" label="Label"></NavMenuItem>
+                    <NavMenuItem iconName="placeholder-regular" navId="9" label="Label"></NavMenuItem>
+                    <NavMenuItem iconName="placeholder-regular" navId="10" label="Label"></NavMenuItem>
+                </MenuSection>
+                <MenuSection slot="scrollable-menubar" showDivider>
+                    <NavMenuItem iconName="placeholder-regular" navId="11" label="Label"></NavMenuItem>
+                    <NavMenuItem iconName="placeholder-regular" navId="12" label="Label"></NavMenuItem>
+                    <NavMenuItem iconName="placeholder-regular" navId="13" label="Label"></NavMenuItem>
+                    <NavMenuItem iconName="placeholder-regular" navId="14" label="Label"></NavMenuItem>
+                    <NavMenuItem iconName="placeholder-regular" navId="15" label="Label"></NavMenuItem>
+                </MenuSection>
+                <MenuSection slot="scrollable-menubar">
+                    <NavMenuItem iconName="placeholder-regular" navId="16" label="Label"></NavMenuItem>
+                    <NavMenuItem iconName="placeholder-regular" navId="17" label="Label"></NavMenuItem>
+                    <NavMenuItem iconName="placeholder-regular" navId="18" label="Label"></NavMenuItem>
+                    <NavMenuItem iconName="placeholder-regular" navId="19" label="Label"></NavMenuItem>
+                    <NavMenuItem iconName="placeholder-regular" navId="20" label="Label"></NavMenuItem>
+                </MenuSection>
+                <MenuSection slot="fixed-menubar" >
+                    <NavMenuItem iconName="placeholder-regular" navId="21" label="Label"></NavMenuItem>
+                    <NavMenuItem iconName="placeholder-regular" navId="22" label="Label"></NavMenuItem>
+                    <NavMenuItem iconName="placeholder-regular" navId="23" label="Label"></NavMenuItem>
+                    <NavMenuItem iconName="placeholder-regular" navId="24" label="Label"></NavMenuItem>
+                    <NavMenuItem iconName="placeholder-regular" navId="25" label="Label"></NavMenuItem>
+                </MenuSection>
+                <Icon slot="brand-logo" name="apple-bold"></Icon>
             </SideNavigation>
         </>
     );
