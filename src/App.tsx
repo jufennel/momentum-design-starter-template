@@ -4,7 +4,9 @@ import HomePage from './pages/HomePage'
 import '@momentum-design/fonts/dist/css/fonts.css';
 import '@momentum-design/tokens/dist/css/components/complete.css';
 
-import { ThemeProvider, IconProvider } from '@momentum-design/components/react';
+import '@momentum-design/fonts/dist/css/fonts.css';
+import '@momentum-design/tokens/dist/css/components/complete.css';
+import { ThemeProvider, IconProvider } from '@momentum-design/components/react'
 
 function App() {
   return (
