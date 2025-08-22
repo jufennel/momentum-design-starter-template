@@ -10,7 +10,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
     <>
       <Header />
-      <div className="flex flex-row gap-8">
+      <div className="main-layout">
         <SideNavigation />
         <main>
           {/* NOTE: This is where the main content of the page will be rendered */}

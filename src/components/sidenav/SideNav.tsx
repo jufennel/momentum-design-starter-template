@@ -1,15 +1,14 @@
 import React from 'react'
-import { SideNavigation, MenuSection, MenuItem } from '@momentum-design/components/react'
-import styles from './SideNav.module.css'
+import { SideNavigation, MenuSection, NavMenuItem } from '@momentum-design/components/react'
 
 const SideNav: React.FC = () => {
     return (
         <>
-            <SideNavigation variant="flexible" footer-text="Customer Name" grabber-btn-aria-label="Toggle Side navigation" parent-nav-tooltip-text="Contains active navmenuitem">
-                <MenuSection slot="scrollable-menubar" show-divider="">
-                    <MenuItem badge-type="counter" counter="2" max-counter="66" icon-name="chat-bold" nav-id="1" label="Messaging"></MenuItem>
-                    <MenuItem icon-name="meetings-bold" nav-id="2" label="Meetings" disabled=""></MenuItem>
-                    <MenuItem badge-type="dot" icon-name="audio-call-bold" nav-id="3" label="Calling"></MenuItem>
+            <SideNavigation variant="flexible" footerText="Customer Name" grabberBtnAriaLabel="Toggle Side navigation" parentNavTooltipText="Contains active navmenuitem">
+                <MenuSection slot="scrollable-menubar" showDivider>
+                    <NavMenuItem badgeType="counter" counter={2} maxCounter={66} iconName="chat-bold" navId="1" label="Messaging"></NavMenuItem>
+                    <NavMenuItem iconName="meetings-bold" navId="2" label="Meetings" disabled></NavMenuItem>
+                    <NavMenuItem badgeType="dot" iconName="audio-call-bold" navId="3" label="Calling"></NavMenuItem>
                 </MenuSection>
             </SideNavigation>
         </>
