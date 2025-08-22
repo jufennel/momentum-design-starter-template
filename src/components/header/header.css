@@ -1,4 +1,13 @@
+.header {
+    height: 4rem;
+}
 .leadingSlot {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.trailingSlot {
     display: flex;
     align-items: center;
     gap: 8px;
